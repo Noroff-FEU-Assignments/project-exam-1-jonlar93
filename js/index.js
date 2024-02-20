@@ -5,8 +5,6 @@ import { fetchAndRender} from "./components/renderPosts.js";
 import * as hotJar from "./hotjar/hotJar.js"
 import * as api from "./api/getOne.js"
 
-hotJar.hotJar();
-
 switch (location.pathname) {
     case "/index.html":
     case "/index":
