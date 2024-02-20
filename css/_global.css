@@ -1,0 +1,25 @@
+/* add global css in here  */
+
+
+body{
+    background-color:var(--color-sides) ;
+    background-image: url(/images/test/tert.jpg);
+    background-repeat: repeat;
+    background-size: 50px 50px;
+}
+
+main{
+    background-color: var(--color-fallback);
+    width: var(--full-width-main);
+    animation: fadeInSlideIn 1s ease-in forwards; 
+}
+
+
+@keyframes fadeInSlideIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

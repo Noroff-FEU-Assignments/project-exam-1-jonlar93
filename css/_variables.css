@@ -1,0 +1,64 @@
+:root {
+    
+    /* color scheme  */
+    --color-primary: #2A5578;
+    --color-fallback: #2A5578; /* same as primary but only use where fallback is needed in case i need to change fallback color*/
+    --color-secondary:linear-gradient(90deg, rgba(14,13,38,1) 0%, rgba(25,87,128,1) 53%, rgba(14,13,38,1)100%);
+    --color-sides:#4b4b4c;
+    --color-opaque-main:rgba(0, 0, 0, 0.2);
+    --color-opaque-secondary:rgb(42 34 76 / 30%);
+    --text-white:#fff;
+    ---text-color-dark:#000;
+
+    /* font family  */
+    --font-family-headings:"oswald";
+    --font-family-base:"open sans";
+    --font-family-primary-fallback:"sans-serif";
+    --font-family-secondary-fallback:"Arial";
+
+    /* font sizes */
+
+    --font-size-p: clamp(1.125rem, 1.0815rem + 0.2174vi, 1.25rem);
+    --font-size-p-medium: clamp(1.5625rem, 1.2364rem + 1.6304vi, 2.5rem);
+    --font-size-p-large: clamp(1.875rem, 1.4402rem + 2.1739vi, 3.125rem);
+    --font-size-h1: clamp(1.875rem, 1.4402rem + 2.1739vi, 3.125rem);
+    --font-size-h2: clamp(1.5625rem, 1.2364rem + 1.6304vi, 2.5rem);
+    --font-size-h3: clamp(1.3021rem, 1.0593rem + 1.2138vi, 2rem);
+
+
+/* @link https://utopia.fyi/type/calculator?c=320,30,1.2,1240,50,1.25,5,5,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
+/* 
+Step -3: 17.3611px → 25.6px
+--step--3: clamp(1.0851rem, 0.906rem + 0.8955vi, 1.6rem);
+Step -2: 20.8333px → 32px
+--step--2: clamp(1.3021rem, 1.0593rem + 1.2138vi, 2rem);
+Step -1: 25px → 40px
+--step--1: clamp(1.5625rem, 1.2364rem + 1.6304vi, 2.5rem);
+Step 0: 30px → 50px
+--step-0: clamp(1.875rem, 1.4402rem + 2.1739vi, 3.125rem); */
+
+
+
+    /* font weight  */
+    --font-weight-regular: 200;
+    --font-weight-semi-bold: 200;
+    --font-weight-bold: 200;
+
+
+    /* sizes  */
+    --full-width-main:min(1500px, 90%);
+    --full-width-main-small:min(900px, 100%);
+
+    
+    /* spacing */
+    --spacing-xs: 20px;
+
+    /* border*/
+    --border-radius: 30px;
+
+    /* shadows  */
+    --main-shadow:0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --secondary-shadow:0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --glow-shadow:0 1px 2px 0 rgba(0, 0, 0, 0.05);
+
+}

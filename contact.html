@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="welcome to board buddy, the blog to learning snowboarding" />
+    <meta name="keywords" content="snowboard, guide, online, free," />
+    <title>Board buddy | Home</title>
+    <link href="/css/styles.css" rel="stylesheet" />
+    <link rel="icon" href="/images/logoDarkBG.png" />
+    <script type="module" src="js/index.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header_wrapper">
+        <div class="logo_wrapper">
+          <a href="/index.html" class="logo"><img src="/images/logoWhite.png" alt="board buddy logo" /></a>
+          <p>board buddy</p>
+        </div>
+        <button class="hamburger" id="hamburger"><img src="/images/test/hamburger.png" alt="" /></button>
+        <nav id="navTop">
+          <ul>
+            <li><a href="/index.html">home</a></li>
+            <li><a href="/blogs.html">blog</a></li>
+            <li><a href="/about.html">about</a></li>
+            <li><a href="/contact.html">contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="banner">
+        <h1>contact</h1>
+        <div class="banner_bg"></div>
+      </section>
+      <section class="section_bg_image">
+        <article class="contact_form-container">
+          <form id="myForm" action="" method="get">
+            <div>
+              <label for="name">Name</label>
+              <span id="nameError" class="error"></span>
+              <input type="text" id="name" placeholder="your name min length 5" />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <span id="emailError" class="error"></span>
+              <input type="email" id="email" placeholder="Please enter a valid email" />
+            </div>
+            <div>
+              <label for="subject">Subject</label>
+              <span id="subjectError" class="error"></span>
+              <input type="text" id="subject" placeholder="your subject min length 15" />
+            </div>
+            <div>
+              <label for="message">Message</label>
+              <span id="messageError" class="error"></span>
+              <textarea id="message" placeholder="your message here min length 25"></textarea>
+            </div>
+            <div>
+              <input type="submit" value="Send" />
+            </div>
+          </form>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <div class="footer_wrapper">
+        <a href="/index.html"><img src="/images/logoWhite.png" alt="board buddy logo" class="footer_logo" /></a>
+        <p>&copy 2024 board buddy. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

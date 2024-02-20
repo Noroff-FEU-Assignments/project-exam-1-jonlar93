@@ -1,0 +1,10 @@
+/* add sizes in here  */
+
+
+main,
+.header_wrapper,
+.footer_wrapper{
+    width: var(--full-width-main);
+    margin-inline: auto;
+}
+

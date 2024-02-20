@@ -1,0 +1,46 @@
+/* transitions
+======================================== */
+.button_load-more{
+    transition: 0.3s ease-in-out;
+}
+
+.previous,
+.next{
+    transition: all 0.4s ease-in-out;
+}
+
+.carusell_card img,
+.article_card img{
+    transition: all 0.6s ease-in-out;
+}
+
+/* effects
+=================================== */
+.button_load-more:hover{
+    margin-left: 15px;
+    background: rgba(29, 30, 67, 0.7);
+    transform: scale(1.1);
+    filter: drop-shadow(0px 0px 18px #ffffff);
+}
+
+.button_load-more:active{
+    transform: scale(1.0);
+    background: rgba(29, 30, 67, 0.5);
+    filter: drop-shadow(0px 0px 18px #929191);
+}
+
+.carusell_card img:hover,
+.article_card img:hover{
+    transform: scale(1.1);
+}
+
+
+
+.previous:hover,
+.next:hover{
+    filter: opacity(1);
+    filter: drop-shadow(0px 0px 10px #060f8e);
+    transform: scale(1.2);
+    
+    
+}
