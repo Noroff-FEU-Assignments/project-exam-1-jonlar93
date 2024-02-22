@@ -22,7 +22,7 @@ function createBlogPost(blogPost) {
   const title = article.querySelector("h2");
   const paragraph = article.querySelector("p");
 
-  link.href = `/htmlPosts/posts.html?id=${blogPost.id}`;
+  link.href = `/htmlPosts/?id=${blogPost.id}`;
 
   const imgSrc = (img.src = blogPost._embedded["wp:featuredmedia"][0].source_url);
   const imgAlt = (img.alt = blogPost._embedded["wp:featuredmedia"][0].alt_text);
