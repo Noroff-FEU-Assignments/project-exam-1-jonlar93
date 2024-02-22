@@ -6,6 +6,7 @@ import { fetchAndRender } from "./renderHtml/renderPosts.js";
 import * as renderPost from "./renderHtml/renderPost.js";
 import * as blogPosts from "./renderHtml/renderBlogPage.js";
 
+console.log(location.pathname);
 switch (location.pathname) {
   case "/index.html":
   case "/index":
@@ -29,16 +30,6 @@ switch (location.pathname) {
     }
     break;
 
-  case "/htmlPosts/posts.html":
-  case "/htmlPosts/posts":
-  case "/posts":
-    try {
-      api.getApiId();
-    } catch (error) {
-      // console.error("Error rendering products:", error);
-      // handleRenderError(error);
-    }
-    break;
   case "/contact":
   case "/contact.html":
     try {
@@ -54,7 +45,6 @@ switch (location.pathname) {
   case "/posts":
     try {
       renderPost.fetchAndParsedHTML();
-      api.getApiId();
     } catch (error) {
       // console.error("Error rendering products:", error);
       // handleRenderError(error);
