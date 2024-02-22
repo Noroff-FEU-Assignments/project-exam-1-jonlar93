@@ -50,6 +50,8 @@ function splitAndRender(blogPost) {
 
 export async function fetchAndParsedHTML() {
   const blogPost = await post.getApiId();
+  const contentDiv = document.getElementById("blog_post");
+  contentDiv.innerHTML = "";
   const parsed = parse.parseHTML(blogPost.content.rendered);
   const contentArray = Array.from(parsed.children);
   splitAndRender(contentArray);

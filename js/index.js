@@ -1,12 +1,10 @@
 import { toggleNav, hamburgerButton } from "./events/navigation.js";
 import { handleErrorMessage } from "./events/formValidate.js";
 import { setupCarousel } from "./events/carusellScroll.js";
-import * as api from "./api/getOne.js";
 import { fetchAndRender } from "./renderHtml/renderPosts.js";
 import * as renderPost from "./renderHtml/renderPost.js";
 import * as blogPosts from "./renderHtml/renderBlogPage.js";
 
-console.log(location.pathname);
 switch (location.pathname) {
   case "/index.html":
   case "/index":
@@ -40,9 +38,9 @@ switch (location.pathname) {
     }
     break;
 
-  case "/htmlPosts/posts.html":
-  case "/htmlPosts/posts":
-  case "/posts":
+  case "/htmlPosts/index.html":
+  case "/htmlPosts/":
+  case "/htmlPosts":
     try {
       renderPost.fetchAndParsedHTML();
     } catch (error) {
