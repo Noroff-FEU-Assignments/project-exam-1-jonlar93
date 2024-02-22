@@ -38,9 +38,9 @@ switch (location.pathname) {
     }
     break;
 
-  case "/htmlPosts/index.html":
-  case "/htmlPosts/":
-  case "/htmlPosts":
+  case "/htmlposts/index.html":
+  case "/htmlposts/":
+  case "/htmlposts":
     try {
       renderPost.fetchAndParsedHTML();
     } catch (error) {

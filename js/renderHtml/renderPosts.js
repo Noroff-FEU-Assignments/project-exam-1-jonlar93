@@ -14,7 +14,7 @@ const postTemplate = `
 export function createHtmlPost(post) {
   const link = document.createElement("a");
   link.innerHTML = postTemplate;
-  link.href = `/htmlPosts/?id=${post.id}`;
+  link.href = `/htmlposts/?id=${post.id}`;
   const img = link.querySelector("img");
   const title = link.querySelector("h3");
   const paragraph = link.querySelector("p");
