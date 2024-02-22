@@ -1,101 +1,91 @@
 /* add header and footer css in here  */
 
-.hamburger{
-    display: none;
+.hamburger {
+  display: none;
 }
 
 /* the full header 
 ====================================================== */
-header{
-    height: auto;
-    background: var(--color-primary);
+header {
+  height: auto;
+  background: var(--color-primary);
 }
 
-.header_wrapper{
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 0 10px 0;
-    gap: 20px;
+.header_wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0 10px 0;
+  gap: 20px;
 }
-
-
 
 /* logo with text 
 ======================================================= */
-.logo_wrapper{
-    display: flex;
-    align-items: center;
+.logo_wrapper {
+  display: flex;
+  align-items: center;
 }
-
 
 /* .logo is both the href and logo image */
-a.logo{
-    padding: 0px;
-    width: 70px;
+a.logo {
+  padding: 0px;
+  width: 70px;
 }
 
-.logo>img{
-    height:auto;
-    width: 100%;
+.logo > img {
+  height: auto;
+  width: 100%;
 }
 
-.logo_wrapper>p{
-    font-size: var(--font-size-p-large);
-    margin-left: -8px;
-    font-weight: 600;
-    text-wrap: nowrap;
-    /* change this with a styled div if i have time !!!!! */
-    text-decoration: underline;
+.logo_wrapper > p {
+  font-size: var(--font-size-p-large);
+  margin-left: -8px;
+  font-weight: 600;
+  text-wrap: nowrap;
+  /* change this with a styled div if i have time !!!!! */
+  text-decoration: underline;
 }
-
 
 /* the navigation 
 ========================================================== */
 
-ul{
-    display: flex;
-    height: 100%;
-    align-items: center;
-    column-gap: 10px;
+ul {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  column-gap: 10px;
 }
 
-li>a{
-    font-size: var(--font-size-p-medium);
-    color: var(--text-white);
-    align-self: center;
-    padding: 20px 10px;
+li > a {
+  font-size: var(--font-size-p-medium);
+  color: var(--text-white);
+  align-self: center;
+  padding: 20px 10px;
 }
-
-
-
-
 
 /* footer
 ========================================================*/
 
-footer{
-    background: var(--color-secondary);
-    padding: 15px;
+footer {
+  background: var(--color-secondary);
+  padding: 15px;
 }
 
-.footer_wrapper{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    /* text-wrap: nowrap; */
-    gap: 20px;
-
-
+.footer_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* text-wrap: nowrap; */
+  gap: 20px;
 }
 
-.footer_logo{
-    width: 75px;
-    height: auto;
+.footer_logo {
+  width: 75px;
+  height: auto;
 }
 
-.footer_wrapper>p{
-    margin: 20px;
-    text-align: center;
+.footer_wrapper > p {
+  margin: 20px;
+  text-align: center;
 }
