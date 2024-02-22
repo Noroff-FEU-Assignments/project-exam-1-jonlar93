@@ -1,61 +1,53 @@
 /* add typography here  */
 
-
 /* global typography */
 
-
-body{
-    font-family: var(--font-family-base),var(--font-family-primary-fallback),var(--font-family-secondary-fallback);
+body {
+  font-family: var(--font-family-base), var(--font-family-primary-fallback), var(--font-family-secondary-fallback);
 }
 
-
-h1{
-    font-size:var(--font-size-h1);
+h1 {
+  font-size: var(--font-size-h1);
 }
 
-h2{
-    font-size: var(--font-size-h2);
-
+h2 {
+  font-size: var(--font-size-h2);
 }
 
-h3{
-    font-size: var(--font-size-h3);
+h3 {
+  font-size: var(--font-size-h3);
 }
 
-h1, h2, h3{
-    font-family: var(--font-family-headings),var(--font-family-primary-fallback),var(--font-family-secondary-fallback);
-    text-decoration: underline;
-    text-align: center;
-    text-transform: capitalize;
-
+h1,
+h2,
+h3 {
+  font-family: var(--font-family-headings), var(--font-family-primary-fallback), var(--font-family-secondary-fallback);
+  text-decoration: underline;
+  text-align: center;
+  text-transform: capitalize;
 }
 
-p{
-    font-family: var(--font-family-base),var(--font-family-primary-fallback),var(--font-family-secondary-fallback);
-    font-size: var(--font-size-p);
+p {
+  font-family: var(--font-family-base), var(--font-family-primary-fallback), var(--font-family-secondary-fallback);
+  font-size: var(--font-size-p);
 }
 
-h1, h2, h3, p{
-    color:var(--text-white); 
+h1,
+h2,
+h3,
+p {
+  color: var(--text-white);
 }
 
-
-button{
-    color: var(--text-white);
-    text-transform: capitalize;
+button {
+  color: var(--text-white);
+  text-transform: capitalize;
 }
-
-
-
-
 
 /* specified typography */
 
-.logo_wrapper>p,
-nav>ul>li{
-    font-family: var(--font-family-headings),var(--font-family-primary-fallback),var(--font-family-secondary-fallback);
-    text-transform: capitalize;
+.logo_wrapper > p,
+nav > ul > li {
+  font-family: var(--font-family-headings), var(--font-family-primary-fallback), var(--font-family-secondary-fallback);
+  text-transform: capitalize;
 }
-
-
-
