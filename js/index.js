@@ -4,12 +4,14 @@ import * as carusellScroll from "./events/carusellScroll.js";
 import * as carusell from "./renderHtml/renderCarusell.js";
 import * as renderPost from "./renderHtml/renderPost.js";
 import * as blogPosts from "./renderHtml/renderBlogPage.js";
+import * as sorted from "./parse/sortApi.js";
 
 switch (location.pathname) {
   case "/index.html":
   case "/index":
   case "/":
     try {
+      sorted.fetchAndSort();
       carusell.fetchAndRender();
       carusellScroll.setupCarousel();
     } catch (error) {

@@ -5,12 +5,9 @@ export async function getApiId() {
   const params = new URLSearchParams(queryString);
   const id = params.get("id");
 
-  const url = constants.baseUrl + "/" + id;
+  const url = constants.baseUrl + "/" + id + "?_embed";
 
   const response = await fetch(url);
   const data = await response.json();
-
-  // console.log(data);
-
   return data;
 }

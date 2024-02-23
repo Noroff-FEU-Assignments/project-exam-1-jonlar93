@@ -38,6 +38,7 @@ export async function fetchAndRenderBlogPosts() {
   const contentDiv = document.getElementById("blog_posts");
   const blogPost = await post.getApi();
   contentDiv.innerHTML = "";
+
   blogPost.forEach((blogPost) => {
     const article = createBlogPost(blogPost);
     contentDiv.append(article);

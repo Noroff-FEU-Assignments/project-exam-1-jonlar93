@@ -10,11 +10,9 @@ const postTemplate = `
   </div>
 </div>
 `;
-// add title
 
-// the renderSinglePost expects a specific structure .
-
-// header.
+// the renderSinglePost expects a specific structure . where every 3 element you put in a post gets rendered into one article. and follow the structure bellow when inputting into wp
+// heading.
 // img.
 // paragraph.
 
@@ -53,7 +51,6 @@ export async function fetchAndParsedHTML() {
   document.title = "Board Buddy | blog > " + blogPost.title.rendered;
 
   const heading = document.getElementById("banner_title");
-  console.log(blogPost);
   heading.textContent = blogPost.title.rendered;
 
   const contentDiv = document.getElementById("blog_post");
@@ -61,6 +58,13 @@ export async function fetchAndParsedHTML() {
   const parsed = parse.parseHTML(blogPost.content.rendered);
   const contentArray = Array.from(parsed.children);
   splitAndRender(contentArray);
+
+  updateBanner(blogPost);
 }
 
-function renderBanner() {}
+function updateBanner(blogPost) {
+  const banner = document.querySelector(".banner_bg-post");
+  const imgSrc = blogPost._embedded["wp:featuredmedia"][0].source_url;
+
+  banner.style.backgroundImage = `url(${imgSrc})`;
+}
