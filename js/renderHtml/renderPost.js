@@ -50,9 +50,17 @@ function splitAndRender(blogPost) {
 
 export async function fetchAndParsedHTML() {
   const blogPost = await post.getApiId();
+  document.title = "Board Buddy | blog > " + blogPost.title.rendered;
+
+  const heading = document.getElementById("banner_title");
+  console.log(blogPost);
+  heading.textContent = blogPost.title.rendered;
+
   const contentDiv = document.getElementById("blog_post");
   contentDiv.innerHTML = "";
   const parsed = parse.parseHTML(blogPost.content.rendered);
   const contentArray = Array.from(parsed.children);
   splitAndRender(contentArray);
 }
+
+function renderBanner() {}

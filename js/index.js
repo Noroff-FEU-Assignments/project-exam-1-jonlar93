@@ -1,7 +1,7 @@
-import { toggleNav, hamburgerButton } from "./events/navigation.js";
-import { handleErrorMessage } from "./events/formValidate.js";
-import { setupCarousel } from "./events/carusellScroll.js";
-import { fetchAndRender } from "./renderHtml/renderPosts.js";
+import * as hamburger from "./events/navigation.js";
+import * as validateForm from "./events/formValidate.js";
+import * as carusellScroll from "./events/carusellScroll.js";
+import * as carusell from "./renderHtml/renderCarusell.js";
 import * as renderPost from "./renderHtml/renderPost.js";
 import * as blogPosts from "./renderHtml/renderBlogPage.js";
 
@@ -10,8 +10,8 @@ switch (location.pathname) {
   case "/index":
   case "/":
     try {
-      fetchAndRender();
-      setupCarousel();
+      carusell.fetchAndRender();
+      carusellScroll.setupCarousel();
     } catch (error) {
       // console.error("Error rendering products:", error);
       // handleRenderError(error);
@@ -31,7 +31,7 @@ switch (location.pathname) {
   case "/contact":
   case "/contact.html":
     try {
-      handleErrorMessage();
+      validateForm.handleErrorMessage();
     } catch (error) {
       // console.error("Error rendering products:", error);
       // handleRenderError(error);

@@ -37,7 +37,6 @@ function createBlogPost(blogPost) {
 export async function fetchAndRenderBlogPosts() {
   const contentDiv = document.getElementById("blog_posts");
   const blogPost = await post.getApi();
-  console.log(blogPost);
   contentDiv.innerHTML = "";
   blogPost.forEach((blogPost) => {
     const article = createBlogPost(blogPost);
