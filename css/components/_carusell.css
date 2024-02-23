@@ -1,79 +1,70 @@
-
-.carusell_wrapper{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    row-gap: 20px;
-    gap: 20px;
+.carusell_wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  row-gap: 20px;
+  gap: 20px;
 }
 
-
-.carusell_h2{
-    padding: 20px;
+.carusell_h2 {
+  padding: 20px;
 }
 
 .carusell_container {
-    display: flex;
-    gap: 50px;
-    margin-inline: auto;
-    overflow-x: scroll;
-    scroll-snap-type: x proximity;
-    min-height: 60px;
-    margin-inline: auto;
-    border-radius: 30px;
-    padding-bottom: 20px;
-    scrollbar-width: none;
-    /* position: relative; */
+  display: flex;
+  gap: 50px;
+  margin-inline: auto;
+  overflow-x: scroll;
+  scroll-snap-type: x proximity;
+  min-height: 60px;
+  margin-inline: auto;
+  border-radius: 30px;
+  padding-bottom: 20px;
+  scrollbar-width: none;
 }
 
 .carusell_container::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .carusell_card {
-    display: flex;
-    flex-direction: column;
-    width: clamp(18.75rem, 17.663rem + 5.4348vi, 21.875rem);
-    height: clamp(22.5rem, 21.1957rem + 6.5217vi, 26.25rem);
-    border-radius: 30px;
-    overflow: hidden;
-    filter: drop-shadow(0px 0px 10px #060f8e);
-    scroll-snap-align: start;
+  display: flex;
+  width: clamp(18.75rem, 17.663rem + 5.4348vi, 21.875rem);
+  height: clamp(22.5rem, 21.1957rem + 6.5217vi, 26.25rem);
+  border-radius: 30px;
+  overflow: hidden;
+  filter: drop-shadow(0px 0px 10px #060f8e);
+  scroll-snap-align: start;
 }
 
 .carusell_card img {
-    width: 500px; /* Make image responsive within card */
-    height: auto;
-    aspect-ratio: 1 / 1; /* Adjust based on your preference */
-    object-fit: cover; /* Adjust based on your preference */
-    object-position: center; /* Ensures image is centered */
+  width: 500px;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
 }
 
 .carusell_text-wrapper {
-    position: absolute;
-    bottom: 0%;
-    left: 0%;
-    min-height: 105px;
-    padding: 5px;
-    text-align: center;
-    width: 100%; /* Ensures full width within the card */
-    background-color: var(--color-opaque-secondary);
-    backdrop-filter: blur(3px);
-    z-index: 1;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  min-height: 105px;
+  padding: 5px;
+  text-align: center;
+  width: 100%;
+  background-color: var(--color-opaque-secondary);
+  backdrop-filter: blur(3px);
+  z-index: 1;
 }
-
-
 
 .previous,
-.next{
-    z-index: 1;
-    background: radial-gradient(circle, rgb(199, 17, 17) 0%, rgb(222, 0, 0) 53%, rgba(224, 6, 6, 0.407) 100%);
-    border-radius: 30px;
-    padding: 10px;
-    filter: opacity(0.6);
-    height: 100%;
-    width: 80px;
+.next {
+  z-index: 1;
+  background: radial-gradient(circle, rgb(199, 17, 17) 0%, rgb(222, 0, 0) 53%, rgba(224, 6, 6, 0.407) 100%);
+  border-radius: 30px;
+  padding: 10px;
+  filter: opacity(0.6);
+  height: 100%;
+  width: 80px;
 }
-
-
-

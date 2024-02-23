@@ -14,7 +14,4 @@ export function hamburgerButton() {
   hamburger.addEventListener("click", toggleNav); // Pass `toggleNav` directly.
 }
 
-// Execute the setup function when the document content has been loaded.
-document.addEventListener("DOMContentLoaded", (event) => {
-  hamburgerButton();
-});
+hamburgerButton();

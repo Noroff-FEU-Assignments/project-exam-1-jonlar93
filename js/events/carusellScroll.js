@@ -17,13 +17,10 @@ function scrollCarousel(next) {
   });
 }
 
-// settup carusell functionality
 export function setupCarousel() {
-  document.addEventListener("DOMContentLoaded", () => {
-    const prevButton = document.getElementById("previous");
-    const nextButton = document.getElementById("next");
+  const prevButton = document.getElementById("previous");
+  const nextButton = document.getElementById("next");
 
-    prevButton.addEventListener("click", () => scrollCarousel(false));
-    nextButton.addEventListener("click", () => scrollCarousel(true));
-  });
+  prevButton.addEventListener("click", () => scrollCarousel(false));
+  nextButton.addEventListener("click", () => scrollCarousel(true));
 }
