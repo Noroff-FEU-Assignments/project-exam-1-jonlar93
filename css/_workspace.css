@@ -41,7 +41,14 @@
 
 .banner h1 {
   z-index: 1;
-  -webkit-text-stroke: 1px rgb(111, 111, 111);
+  /* -webkit-text-stroke: 1px rgb(111, 111, 111); */
+  padding: 10px 20px 20px 20px;
+  margin: 10px;
+  background: var(--color-opaque-main);
+  box-shadow: 0 8px 32px 0 rgba(78, 77, 77, 0.581);
+  backdrop-filter: blur(3px);
+  border-radius: 30px;
+  max-width: 600px;
 }
 
 /* hero section 
@@ -122,6 +129,7 @@
 }
 .section_floating-container:hover .category_element {
   height: 300px;
+  backdrop-filter: blur(4px);
 }
 
 .section_floating-container:hover a {
@@ -198,6 +206,7 @@
 .section_floating-container-img1:hover,
 .section_floating-container-img2:hover,
 .section_floating-container-img3:hover {
+  background-size: cover;
   background-image: url(/images/hero-filtered.jpg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -262,6 +271,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  order: 2;
 }
 
 .button_load-more {

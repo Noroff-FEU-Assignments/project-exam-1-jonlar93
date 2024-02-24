@@ -4,7 +4,7 @@
   --color-fallback: #2a5578; /* same as primary but only use where fallback is needed in case i need to change fallback color*/
   --color-secondary: linear-gradient(90deg, rgba(14, 13, 38, 1) 0%, rgba(25, 87, 128, 1) 53%, rgba(14, 13, 38, 1) 100%);
   --color-sides: #4b4b4c;
-  --color-opaque-main: rgba(0, 0, 0, 0.2);
+  --color-opaque-main: rgb(0 0 0 / 40%);
   --color-opaque-secondary: rgba(10, 4, 39, 0.6);
   --text-white: #fff;
   ---text-color-dark: #000;

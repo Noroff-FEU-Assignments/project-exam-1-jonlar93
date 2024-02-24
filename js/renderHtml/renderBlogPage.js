@@ -39,10 +39,22 @@ export async function fetchAndRenderBlogPosts() {
   const blogPost = await post.getApi();
   contentDiv.innerHTML = "";
 
-  blogPost.forEach((blogPost) => {
-    const article = createBlogPost(blogPost);
-    contentDiv.append(article);
-  });
-  const loadMoreButton = button.createButton();
+  let sliceStart = 0;
+  const postsToShow = 10;
+
+  const renderPosts = () => {
+    const slicedPosts = blogPost.slice(sliceStart, sliceStart + postsToShow);
+    slicedPosts.forEach((blogPost) => {
+      const article = createBlogPost(blogPost);
+      contentDiv.append(article);
+    });
+    sliceStart += postsToShow;
+  };
+
+  const loadMoreButton = button.createButton("Load More");
+  loadMoreButton.addEventListener("click", renderPosts);
+
+  renderPosts();
+
   contentDiv.append(loadMoreButton);
 }
