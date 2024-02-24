@@ -136,6 +136,7 @@
   color: var(--text-white);
   opacity: 1;
   pointer-events: auto;
+  touch-action: auto;
 }
 
 .section_floating-container a {
@@ -147,6 +148,7 @@
   opacity: 0;
   transition: 1s ease;
   pointer-events: none;
+  touch-action: none;
   backdrop-filter: blur(3px);
   padding: 5px;
   width: 250px;
@@ -220,7 +222,7 @@
   column-gap: 30px;
   row-gap: 50px;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  padding-inline: 4dvw;
+  padding-inline: 8dvw;
   padding-block: 50px;
 }
 
