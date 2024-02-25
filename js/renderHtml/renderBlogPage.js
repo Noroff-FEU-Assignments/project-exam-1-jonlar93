@@ -49,6 +49,11 @@ export async function fetchAndRenderBlogPosts() {
       contentDiv.append(article);
     });
     sliceStart += postsToShow;
+
+    if (sliceStart + postsToShow >= blogPost.length) {
+      loadMoreButton.remove();
+      return;
+    }
   };
 
   const loadMoreButton = button.createButton("Load More");

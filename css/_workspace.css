@@ -89,10 +89,6 @@
 /* floating section underneath hero  
 ===============================================================*/
 
-.section_padding_top {
-  padding-top: 150px;
-}
-
 .section_floating {
   background: var(--color-secondary);
   margin-inline: auto;
@@ -136,7 +132,6 @@
   color: var(--text-white);
   opacity: 1;
   pointer-events: auto;
-  touch-action: auto;
 }
 
 .section_floating-container a {
@@ -148,7 +143,6 @@
   opacity: 0;
   transition: 1s ease;
   pointer-events: none;
-  touch-action: none;
   backdrop-filter: blur(3px);
   padding: 5px;
   width: 250px;
@@ -210,7 +204,6 @@
 .section_floating-container-img3:hover {
   background-size: cover;
   background-image: url(/images/hero-filtered.jpg);
-  background-repeat: no-repeat;
   background-position: center center;
 }
 

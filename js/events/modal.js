@@ -14,7 +14,6 @@ export function setupModalListener() {
 
 function handleClickOutside(event) {
   if (event.target.classList.contains("modal")) {
-    console.log(event);
     removeModal();
   }
 }

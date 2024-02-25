@@ -6,8 +6,7 @@
   --color-sides: #4b4b4c;
   --color-opaque-main: rgb(0 0 0 / 40%);
   --color-opaque-secondary: rgba(10, 4, 39, 0.6);
-  --text-white: #d8d8d8;
-  ---text-color-dark: #000;
+  --text-white: #fefefe;
 
   /* font family  */
   --font-family-headings: "oswald";

@@ -49,4 +49,31 @@
   .next {
     transform: scale(0.8);
   }
+
+  /* floating container 
+  =============================== */
+  .section_floating-container a {
+    color: var(--text-white);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .section_floating-container-img1,
+  .section_floating-container-img2,
+  .section_floating-container-img3 {
+    background-image: url(/images/hero-filtered.jpg);
+    /* transition: all 0.8s; */
+  }
+
+  .section_floating-container .category_element {
+    height: 300px;
+    backdrop-filter: blur(4px);
+  }
+
+  .section_floating-container-img1:hover,
+  .section_floating-container-img2:hover,
+  .section_floating-container-img3:hover {
+    background-size: initial;
+    background-position: initial;
+  }
 }
