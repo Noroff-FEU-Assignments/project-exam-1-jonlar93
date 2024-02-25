@@ -5,8 +5,13 @@
   padding-block: 20px;
 }
 
-.section_floating-wrapper {
+.section_floating-wrapper,
+.section_floating-container,
+.category_element {
   display: flex;
+}
+
+.section_floating-wrapper {
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 20px;
@@ -17,14 +22,12 @@
 .section_floating-container {
   height: 100%;
   width: 300px;
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
   border-radius: 30px;
 }
 
 .category_element {
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -67,7 +70,7 @@
 
 .floating_top,
 .floating_bottom {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgb(0 0 0 / 60%);
   backdrop-filter: blur(1px);
   padding: 10px;
   text-align: center;

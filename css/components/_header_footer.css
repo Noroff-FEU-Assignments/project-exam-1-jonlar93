@@ -43,7 +43,6 @@ a.logo {
   font-weight: 600;
   text-wrap: nowrap;
   color: #ffffff;
-  /* change this with a styled div if i have time !!!!! */
   text-decoration: underline;
 }
 
@@ -78,7 +77,6 @@ footer {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  /* text-wrap: nowrap; */
   gap: 20px;
 }
 

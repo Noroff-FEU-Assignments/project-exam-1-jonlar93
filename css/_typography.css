@@ -22,7 +22,6 @@ h1,
 h2,
 h3 {
   font-family: var(--font-family-headings), var(--font-family-primary-fallback), var(--font-family-secondary-fallback);
-  /* text-decoration: underline; */
   text-align: center;
   text-transform: capitalize;
   text-wrap: balance;
@@ -55,10 +54,7 @@ nav > ul > li {
   text-transform: capitalize;
 }
 
-.hero_wrapper {
-  text-align: center;
-}
-
+.hero_wrapper,
 .card_content {
   text-align: center;
 }

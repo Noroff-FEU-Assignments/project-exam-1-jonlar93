@@ -52,10 +52,7 @@
 
 /* opacity + filters 
 ========================================== */
-.banner_bg {
-  filter: brightness(0.8);
-}
-
+.banner_bg,
 .banner_bg-post {
   filter: brightness(0.8);
 }
@@ -72,12 +69,10 @@
 
 .banner h1 {
   box-shadow: 0 8px 32px 0 rgba(78, 77, 77, 0.581);
-  backdrop-filter: blur(3px);
 }
 
 .hero_text {
   box-shadow: 0 8px 32px 0 rgb(0 0 0 / 37%);
-  backdrop-filter: blur(3px);
 }
 
 .article_card {
@@ -86,6 +81,11 @@
 
 .button_load-more {
   filter: drop-shadow(7px 11px 12px #ffffff);
+}
+
+.banner h1,
+.hero_text,
+.button_load-more {
   backdrop-filter: blur(3px);
 }
 

@@ -70,7 +70,6 @@
   .section_floating-container-img2,
   .section_floating-container-img3 {
     background-image: url(/images/hero-filtered.jpg);
-    /* transition: all 0.8s; */
   }
 
   .section_floating-container .category_element {

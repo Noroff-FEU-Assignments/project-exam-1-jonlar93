@@ -11,14 +11,14 @@
 }
 
 .hero_section {
-  background: url("/images/hero.jpg") no-repeat top 0% right 22% / cover;
+  background: url(/images/hero.jpg) no-repeat top 0% right 22% / cover;
 }
 
-.article_card img {
+.article_card img,
+.post_image-container img {
   object-fit: cover;
 }
 
 .post_image-container img {
-  object-fit: cover;
   object-position: center center;
 }

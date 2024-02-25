@@ -1,26 +1,20 @@
+.banner,
+.hero_wrapper,
+.grid_placement-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner_bg,
+.banner_bg-post,
+.card_content {
+  position: absolute;
+}
+
+.article_card,
 .banner {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.banner_bg {
-  position: absolute;
-}
-
-.banner_bg-post {
-  position: absolute;
-}
-
-.article_card {
-  position: relative;
-}
-
-.hero_wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .grid_container {
@@ -31,15 +25,11 @@
 }
 
 .card_content {
-  position: absolute;
   display: flex;
   flex-direction: column;
 }
 
 .grid_placement-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   order: 2;
 }
 
