@@ -16,11 +16,7 @@ main,
   max-height: 350px;
 }
 
-.banner_bg {
-  height: 100%;
-  width: 100%;
-}
-
+.banner_bg,
 .banner_bg-post {
   height: 100%;
   width: 100%;
@@ -29,7 +25,7 @@ main,
 .banner h1 {
   padding: 10px 20px 20px 20px;
   margin: 10px;
-  border-radius: 30px;
+  border-radius: var(--border-radius);
   max-width: 600px;
 }
 
@@ -51,7 +47,7 @@ main,
 .hero_text {
   padding: 10px 20px 20px 20px;
   margin: 10px;
-  border-radius: 30px;
+  border-radius: var(--border-radius);
   max-width: 600px;
 }
 
@@ -62,7 +58,7 @@ main,
 .article_card {
   height: 30dvh;
   max-height: 500px;
-  border-radius: 30px;
+  border-radius: var(--border-radius);
 }
 
 .article_card img {
@@ -85,7 +81,7 @@ main,
   padding: 20px;
   outline: 1px black;
   width: 90%;
-  border-radius: 30px;
+  border-radius: var(--border-radius);
 }
 
 .article_margin {
@@ -94,7 +90,7 @@ main,
 
 .section_post {
   margin-inline: auto;
-  border-radius: 30px;
+  border-radius: var(--border-radius);
   padding: 20px;
   border: 2px solid #ffffff;
 }
@@ -109,7 +105,7 @@ main,
 }
 
 .post_image-container {
-  border-radius: 30px;
+  border-radius: var(--border-radius);
 }
 
 .post_image-container img {
@@ -126,14 +122,14 @@ main,
 
 .contact_form-container {
   margin-inline: auto;
-  border-radius: 30px;
+  border-radius: var(--border-radius);
   padding: 20px;
   width: 90%;
 }
 
 input,
 textarea {
-  border-radius: 30px;
+  border-radius: var(--border-radius);
   padding: 10px 10px 10px 20px;
   margin-bottom: 20px;
   width: min(500px, min(70dvw, 600px));

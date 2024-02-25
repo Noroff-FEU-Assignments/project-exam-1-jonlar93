@@ -34,11 +34,6 @@ Step -1: 25px → 40px
 Step 0: 30px → 50px
 --step-0: clamp(1.875rem, 1.4402rem + 2.1739vi, 3.125rem); */
 
-  /* font weight  */
-  --font-weight-regular: 200;
-  --font-weight-semi-bold: 200;
-  --font-weight-bold: 200;
-
   /* sizes  */
   --full-width-main: min(1500px, 90%);
   --full-width-main-small: min(900px, 100%);
