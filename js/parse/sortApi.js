@@ -11,18 +11,18 @@ export async function fetchAndSort() {
     const beginner = [];
     const advanced = [];
 
-    stored.forEach((sortedElement) => {
-      switch (sortedElement._embedded["wp:term"][0][0].name) {
+    stored.forEach((storedPost) => {
+      switch (storedPost._embedded["wp:term"][0][0].name) {
         case "locations":
-          location.push(sortedElement);
+          location.push(storedPost);
           break;
 
         case "beginner":
-          beginner.push(sortedElement);
+          beginner.push(storedPost);
           break;
 
         case "advanced":
-          advanced.push(sortedElement);
+          advanced.push(storedPost);
           break;
       }
     });

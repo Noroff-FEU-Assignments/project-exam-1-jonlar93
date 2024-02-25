@@ -51,7 +51,9 @@ function addEventListeners() {
     const isValid = validateName() && validateEmail() && validateSubject() && validateMessage();
 
     if (isValid) {
-      // add submit logic here
+      const succesSpan = document.getElementById("success");
+      succesSpan.classList.add("success", "active-success");
+      succesSpan.textContent = "thank you for your message";
     }
   });
 }

@@ -397,6 +397,22 @@ label {
   transition: all 1s;
 }
 
+.success {
+  display: block;
+  margin-inline: auto;
+  color: #26a744;
+  background-color: rgba(0, 0, 0, 0.37);
+  border-radius: 15px;
+  transition: all 1s;
+  text-align: center;
+  height: 0px;
+}
+
+.active-success {
+  height: fit-content;
+  padding: 5px;
+}
+
 .active {
   height: 50px;
   padding: 5px;
