@@ -14,6 +14,10 @@
   transition: all 0.6s ease-in-out;
 }
 
+.close_modal {
+  transition: opacity 0.5s linear, transform 0.5s ease-in;
+}
+
 /* effects
 =================================== */
 .button_load-more:hover {
@@ -41,5 +45,96 @@
   transform: scale(1.2);
 }
 
+.close_modal:hover {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* opacity + filters 
+========================================== */
+.banner_bg {
+  filter: brightness(0.8);
+}
+
+.banner_bg-post {
+  filter: brightness(0.8);
+}
+
+.backdrop_filter-opaque {
+  backdrop-filter: blur(1px);
+}
+
+/* shadows 
+========================================== */
+.banner {
+  box-shadow: 1px 9px 11px 0px rgba(0, 0, 0, 0.71);
+}
+
+.banner h1 {
+  box-shadow: 0 8px 32px 0 rgba(78, 77, 77, 0.581);
+  backdrop-filter: blur(3px);
+}
+
+.hero_text {
+  box-shadow: 0 8px 32px 0 rgb(0 0 0 / 37%);
+  backdrop-filter: blur(3px);
+}
+
+.article_card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button_load-more {
+  filter: drop-shadow(7px 11px 12px #ffffff);
+  backdrop-filter: blur(3px);
+}
+
 /* effects section floating
 ============================================= */
+
+/* transitions
+============================================ */
+.section_floating-container {
+  transition: all 1.5s;
+}
+
+.category_element {
+  transition: all 0.6s linear;
+}
+
+.section_floating-container a {
+  transition: 1s ease;
+}
+
+.section_floating-container-img1r,
+.section_floating-container-img2,
+.section_floating-container-img3 {
+  transition: all 2s;
+}
+
+/* hover effects
+============================================ */
+
+.section_floating-container:hover .category_element {
+  height: 300px;
+  backdrop-filter: blur(4px);
+}
+
+.section_floating-container:hover a {
+  color: var(--text-white);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.section_floating-container a:hover {
+  transform: scale(1.1);
+  background-color: #000000ec;
+}
+
+.section_floating-container-img1:hover,
+.section_floating-container-img2:hover,
+.section_floating-container-img3:hover {
+  background-size: cover;
+  background-image: url(/images/hero-filtered.jpg);
+  background-position: center center;
+}

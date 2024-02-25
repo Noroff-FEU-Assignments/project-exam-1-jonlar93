@@ -6,3 +6,157 @@ main,
   width: var(--full-width-main);
   margin-inline: auto;
 }
+
+.section_bg_image {
+  padding: 50px 20px;
+}
+
+.banner {
+  height: 30vh;
+  max-height: 350px;
+}
+
+.banner_bg {
+  height: 100%;
+  width: 100%;
+}
+
+.banner_bg-post {
+  height: 100%;
+  width: 100%;
+}
+
+.banner h1 {
+  padding: 10px 20px 20px 20px;
+  margin: 10px;
+  border-radius: 30px;
+  max-width: 600px;
+}
+
+.hero_section {
+  height: 60dvh;
+  max-height: 900px;
+}
+
+.hero_wrapper {
+  height: 100%;
+  margin: auto;
+}
+
+.hero_img {
+  width: 100%;
+  height: auto;
+}
+
+.hero_text {
+  padding: 10px 20px 20px 20px;
+  margin: 10px;
+  border-radius: 30px;
+  max-width: 600px;
+}
+
+.grid_container {
+  padding: 50px 8dvw;
+}
+
+.article_card {
+  height: 30dvh;
+  max-height: 500px;
+  border-radius: 30px;
+}
+
+.article_card img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1;
+}
+
+.card_content {
+  width: 100%;
+  padding-bottom: 5px;
+}
+
+.card_content p,
+.card_content h2 {
+  margin-inline: 10px;
+}
+
+.button_load-more {
+  padding: 20px;
+  outline: 1px black;
+  width: 90%;
+  border-radius: 30px;
+}
+
+.article_margin {
+  margin-block: 50px;
+}
+
+.section_post {
+  margin-inline: auto;
+  border-radius: 30px;
+  padding: 20px;
+  border: 2px solid #ffffff;
+}
+
+.post_content {
+  padding: 20px;
+}
+
+.post_image-container,
+.post_text {
+  width: 49%;
+}
+
+.post_image-container {
+  border-radius: 30px;
+}
+
+.post_image-container img {
+  aspect-ratio: 1;
+  width: 100%;
+}
+
+.post_image-container img,
+.post_image-container {
+  height: 100%;
+  min-width: 250px;
+  max-height: 300px;
+}
+
+.contact_form-container {
+  margin-inline: auto;
+  border-radius: 30px;
+  padding: 20px;
+  width: 90%;
+}
+
+input,
+textarea {
+  border-radius: 30px;
+  padding: 10px 10px 10px 20px;
+  margin-bottom: 20px;
+  width: min(500px, min(70dvw, 600px));
+}
+
+textarea {
+  height: 200px;
+  resize: none;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+label {
+  margin-left: 20px;
+}
+
+.article_card {
+  overflow: hidden;
+}
+
+.post_image-container {
+  overflow: hidden;
+}

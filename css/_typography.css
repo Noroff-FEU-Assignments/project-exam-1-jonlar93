@@ -25,11 +25,14 @@ h3 {
   /* text-decoration: underline; */
   text-align: center;
   text-transform: capitalize;
+  text-wrap: balance;
 }
 
 p {
   font-family: var(--font-family-base), var(--font-family-primary-fallback), var(--font-family-secondary-fallback);
   font-size: var(--font-size-p);
+  line-height: 1.5;
+  hyphens: auto;
 }
 
 h1,
@@ -50,4 +53,26 @@ button {
 nav > ul > li {
   font-family: var(--font-family-headings), var(--font-family-primary-fallback), var(--font-family-secondary-fallback);
   text-transform: capitalize;
+}
+
+.hero_wrapper {
+  text-align: center;
+}
+
+.card_content {
+  text-align: center;
+}
+
+.card_content h2 {
+  font-size: var(--font-size-h3);
+  text-wrap: nowrap;
+}
+
+.button_load-more {
+  font-size: var(--font-size-h3);
+}
+
+label {
+  font-size: var(--font-size-p);
+  font-weight: 700;
 }

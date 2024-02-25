@@ -21,3 +21,10 @@ main {
     opacity: 1;
   }
 }
+
+/* displaying alt text on images added with css where needed */
+.non-visual-text {
+  font-size: 0px;
+  height: 0px;
+  width: 0px;
+}

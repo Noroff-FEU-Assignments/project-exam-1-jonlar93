@@ -1,0 +1,38 @@
+.banner h1 {
+  background: var(--color-opaque-main);
+}
+
+.hero_text {
+  background: var(--color-opaque-main);
+}
+
+.backdrop_filter-opaque {
+  background-color: rgba(10, 4, 39, 0.6);
+}
+
+.button_load-more {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.section_post {
+  background-color: rgba(39, 37, 46, 0.6);
+}
+
+.contact_form-container {
+  background: rgba(42, 34, 76, 0.8);
+  color: white;
+}
+
+input,
+textarea {
+  background-color: #cbcbcb;
+}
+
+::placeholder {
+  color: rgb(0, 0, 0);
+}
+
+input:focus,
+textarea:focus {
+  background-color: #fff;
+}

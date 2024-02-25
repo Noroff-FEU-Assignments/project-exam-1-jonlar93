@@ -1,0 +1,24 @@
+.section_bg_image {
+  background: url(/images/backdrop.jpg) bottom center / cover fixed;
+}
+
+.banner_bg {
+  background: url(/images/banner.jpg) no-repeat top 30% right 30%;
+}
+
+.banner_bg-post {
+  background: url(/images/banner.jpg) no-repeat top 30% right 30% / cover;
+}
+
+.hero_section {
+  background: url("/images/hero.jpg") no-repeat top 0% right 22% / cover;
+}
+
+.article_card img {
+  object-fit: cover;
+}
+
+.post_image-container img {
+  object-fit: cover;
+  object-position: center center;
+}

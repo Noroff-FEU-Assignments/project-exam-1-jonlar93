@@ -1,6 +1,5 @@
-export function handleErrorMessage(id, isValid, message) {
+function handleErrorMessage(id, isValid, message) {
   const errorSpan = document.getElementById(id);
-  addEventListeners();
   if (isValid) {
     errorSpan.textContent = "";
     errorSpan.classList.remove("active");
@@ -12,7 +11,7 @@ export function handleErrorMessage(id, isValid, message) {
 
 function validateName() {
   const name = document.getElementById("name").value;
-  const isValid = name.length >= 5;
+  const isValid = name.length >= 6;
   handleErrorMessage("nameError", isValid, "Name must be at least 5 characters long.");
   return isValid;
 }
@@ -26,20 +25,20 @@ function validateEmail() {
 
 function validateSubject() {
   const subject = document.getElementById("subject").value;
-  const isValid = subject.length >= 15;
+  const isValid = subject.length >= 16;
   handleErrorMessage("subjectError", isValid, "Subject must be more than 15 characters long.");
   return isValid;
 }
 
 function validateMessage() {
   const message = document.getElementById("message").value;
-  const isValid = message.length >= 25;
+  const isValid = message.length >= 26;
   handleErrorMessage("messageError", isValid, "Message must be more than 25 characters long.");
   return isValid;
 }
 
 // ADD EVENT LISTENER FOR BLUR SO I GET REAL TIME ERROR MESSAGES
-function addEventListeners() {
+export function addEventListeners() {
   document.getElementById("name").addEventListener("blur", validateName);
   document.getElementById("email").addEventListener("blur", validateEmail);
   document.getElementById("subject").addEventListener("blur", validateSubject);

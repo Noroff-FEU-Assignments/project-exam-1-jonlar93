@@ -5,7 +5,6 @@ import * as carusell from "./renderHtml/renderCarusell.js";
 import * as renderPost from "./renderHtml/renderPost.js";
 import * as blogPosts from "./renderHtml/renderBlogPage.js";
 import * as sorted from "./parse/sortApi.js";
-import * as errorHandling from "./errorHandling/error.js";
 
 switch (location.pathname) {
   case "/index.html":
@@ -23,7 +22,7 @@ switch (location.pathname) {
 
   case "/contact":
   case "/contact.html":
-    validateForm.handleErrorMessage();
+    validateForm.addEventListeners();
     break;
 
   case "/htmlposts/index.html":

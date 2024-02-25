@@ -1,0 +1,78 @@
+.banner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner_bg {
+  position: absolute;
+}
+
+.banner_bg-post {
+  position: absolute;
+}
+
+.article_card {
+  position: relative;
+}
+
+.hero_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid_container {
+  display: grid;
+  column-gap: 30px;
+  row-gap: 50px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.card_content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+
+.grid_placement-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  order: 2;
+}
+
+.post_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contact_form-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+label {
+  display: block;
+}
+
+/* switch the order on content rendered in js */
+.section_bg_image :nth-child(odd) .post_content .post_text {
+  order: 1;
+}
+
+.banner h1 {
+  z-index: 1;
+}
+
+.card_content {
+  bottom: 0px;
+  left: 0px;
+  z-index: 1;
+}

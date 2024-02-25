@@ -1,3 +1,4 @@
+/* floating static elements */
 .section_floating {
   background: var(--color-secondary);
   margin-inline: auto;
@@ -20,7 +21,6 @@
   flex-direction: column;
   justify-content: space-between;
   border-radius: 30px;
-  transition: all 1.5s;
 }
 
 .category_element {
@@ -30,17 +30,6 @@
   align-items: center;
   height: 200px;
   text-align: center;
-  transition: all 0.6s linear;
-}
-.section_floating-container:hover .category_element {
-  height: 300px;
-  backdrop-filter: blur(4px);
-}
-
-.section_floating-container:hover a {
-  color: var(--text-white);
-  opacity: 1;
-  pointer-events: auto;
 }
 
 .section_floating-container a {
@@ -50,7 +39,7 @@
   margin: 10px;
   font-size: var(--font-size-p);
   opacity: 0;
-  transition: 1s ease;
+
   pointer-events: none;
   backdrop-filter: blur(3px);
   padding: 5px;
@@ -62,11 +51,6 @@
   content: "\00BB";
   font-size: 20px;
   margin-left: 5px;
-}
-
-.section_floating-container a:hover {
-  transform: scale(1.1);
-  background-color: #000000ec;
 }
 
 .floating_top h2 {
@@ -105,13 +89,4 @@
 .section_floating-container-img2,
 .section_floating-container-img3 {
   background-repeat: no-repeat;
-  transition: all 2s;
-}
-
-.section_floating-container-img1:hover,
-.section_floating-container-img2:hover,
-.section_floating-container-img3:hover {
-  background-size: cover;
-  background-image: url(/images/hero-filtered.jpg);
-  background-position: center center;
 }

@@ -5,6 +5,13 @@
   }
 }
 
+@media (min-width: 901px) {
+  nav {
+    /* important to force nav to stay visible on desktop.*/
+    display: block !important;
+  }
+}
+
 @media (max-width: 900px) {
   main {
     width: var(--full-width-main-small);
