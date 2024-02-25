@@ -9,6 +9,7 @@
   main {
     width: var(--full-width-main-small);
   }
+
   .hamburger {
     display: block;
   }
