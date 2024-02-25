@@ -1,6 +1,7 @@
 import * as post from "../api/getOne.js";
 import * as parse from "../parse/parse.js";
 import * as modal from "../events/modal.js";
+import * as errorHandling from "../errorHandling/error.js";
 
 const postTemplate = `
 <h2></h2>
@@ -47,19 +48,24 @@ function splitAndRender(blogPost) {
 }
 
 export async function fetchAndParsedHTML() {
-  const blogPost = await post.getApiId();
-  document.title = "Board Buddy | blog > " + blogPost.title.rendered;
+  try {
+    const blogPost = await post.getApiId();
+    document.title = "Board Buddy | blog > " + blogPost.title.rendered;
 
-  const heading = document.getElementById("banner_title");
-  heading.textContent = blogPost.title.rendered;
+    const heading = document.getElementById("banner_title");
+    heading.textContent = blogPost.title.rendered;
 
-  const contentDiv = document.getElementById("blog_post");
-  contentDiv.innerHTML = "";
-  const parsed = parse.parseHTML(blogPost.content.rendered);
-  const contentArray = Array.from(parsed.children);
-  splitAndRender(contentArray);
+    const contentDiv = document.getElementById("blog_post");
+    contentDiv.innerHTML = "";
+    const parsed = parse.parseHTML(blogPost.content.rendered);
+    const contentArray = Array.from(parsed.children);
+    splitAndRender(contentArray);
 
-  updateBanner(blogPost);
+    updateBanner(blogPost);
+  } catch (error) {
+    console.error("Error rendering post", error);
+    errorHandling.handleRenderError(error);
+  }
 }
 
 function updateBanner(blogPost) {

@@ -1,5 +1,6 @@
 import * as api from "../api/getAll.js";
 import * as parse from "../parse/parse.js";
+import * as errorHandling from "../errorHandling/error.js";
 
 const postTemplate = `
 <article class="carusell_card">
@@ -30,11 +31,16 @@ export function createHtmlPost(post) {
 }
 
 export async function fetchAndRender() {
-  const contentDiv = document.getElementById("carusell");
-  const posts = await api.getApi();
-  contentDiv.innerHTML = "";
-  posts.forEach((element) => {
-    const link = createHtmlPost(element);
-    contentDiv.append(link);
-  });
+  try {
+    const contentDiv = document.getElementById("carusell");
+    const posts = await api.getApi();
+    contentDiv.innerHTML = "";
+    posts.forEach((element) => {
+      const link = createHtmlPost(element);
+      contentDiv.append(link);
+    });
+  } catch (error) {
+    console.error("Error there was an error rendering content", error);
+    errorHandling.handleRenderError(error);
+  }
 }

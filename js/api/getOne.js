@@ -6,8 +6,9 @@ export async function getApiId() {
   const id = params.get("id");
 
   const url = constants.baseUrl + "/" + id + "?_embed";
-
   const response = await fetch(url);
-  const data = await response.json();
-  return data;
+  if (response.ok) {
+    return await response.json();
+  }
+  throw new Error("failed to fetch");
 }

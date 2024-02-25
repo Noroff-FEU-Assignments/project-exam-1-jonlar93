@@ -1,6 +1,7 @@
 import * as post from "../api/getAll.js";
 import * as parse from "../parse/parse.js";
 import * as button from "../components/loadMoreBtn.js";
+import * as errorHandling from "../errorHandling/error.js";
 
 const postTemplate = `
 <a href="">
@@ -35,31 +36,36 @@ function createBlogPost(blogPost) {
 }
 
 export async function fetchAndRenderBlogPosts() {
-  const contentDiv = document.getElementById("blog_posts");
-  const blogPost = await post.getApi();
-  contentDiv.innerHTML = "";
+  try {
+    const contentDiv = document.getElementById("blog_posts");
+    const blogPost = await post.getApi();
+    contentDiv.innerHTML = "";
 
-  let sliceStart = 0;
-  const postsToShow = 10;
+    let sliceStart = 0;
+    const postsToShow = 10;
 
-  const renderPosts = () => {
-    const slicedPosts = blogPost.slice(sliceStart, sliceStart + postsToShow);
-    slicedPosts.forEach((blogPost) => {
-      const article = createBlogPost(blogPost);
-      contentDiv.append(article);
-    });
-    sliceStart += postsToShow;
+    const renderPosts = () => {
+      const slicedPosts = blogPost.slice(sliceStart, sliceStart + postsToShow);
+      slicedPosts.forEach((blogPost) => {
+        const article = createBlogPost(blogPost);
+        contentDiv.append(article);
+      });
+      sliceStart += postsToShow;
 
-    if (sliceStart + postsToShow >= blogPost.length) {
-      loadMoreButton.remove();
-      return;
-    }
-  };
+      if (sliceStart + postsToShow >= blogPost.length) {
+        loadMoreButton.remove();
+        return;
+      }
+    };
 
-  const loadMoreButton = button.createButton("Load More");
-  loadMoreButton.addEventListener("click", renderPosts);
+    const loadMoreButton = button.createButton("Load More");
+    loadMoreButton.addEventListener("click", renderPosts);
 
-  renderPosts();
+    renderPosts();
 
-  contentDiv.append(loadMoreButton);
+    contentDiv.append(loadMoreButton);
+  } catch (error) {
+    console.error("Error rendering blogposts", error);
+    errorHandling.handleRenderError(error);
+  }
 }
