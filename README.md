@@ -1,8 +1,7 @@
-# jonas/dev portfolio
-
+# board buddy
 ![image](/images/test/board-buddy.PNG)
 
-board buddy
+board buddy is a blog site that includes guides from beginner to advanced level in snowboarding
 
 ## Description
 
